@@ -38,3 +38,5 @@ git push -f origin HEAD^:master
 That should "undo" the push.
 
 git rm --cached : removes files from staging area without affecting working directory
+
+https://gist.github.com/niksumeiko/8972566
