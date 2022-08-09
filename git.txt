@@ -1,0 +1,40 @@
+rm -rf .git   - removing git repository (master go poof)
+git add .     - adds all files in the directory to staging area
+git add *.txt - adds all files with txt extension to staging area
+git commit -a -m - commits all modified files
+           -am           Therefore with this step, we skip the staging area.
+
+rm file.txt  - removes file (it's standard unix cmd)
+
+removing file from working directory != removing from both working and staging area.
+file still stays in staging area. You use git add again and commit the changes to apply deletion.
+
+to delete from working directory and staging area at once:
+git rm -m file.txt //*.txt, *.c etc
+
+mv (move) - renaming the files
+mv file1.txt main.js 
+    - add the file1 changes
+    - add the main.js changes 
+so we use
+git mv file1.txt main.js
+
+git ls-files  : shows files in the staging area
+git rm --cached -r file (cached lets file be removed from index aka staging area) (-r for removing entire directory)
+
+Before the code is commited from the staging area, we can check if it good or not by *diff* command
+git diff --staged
+
+For viewing changes in files before staging area i.e, in the working directory
+git diff
+
+git config --global -e : edit global configuration settings in default editor, vs code.
+
+git restore --staged file1.js : remove file from staging area
+
+git clean : undo local changes
+
+git push -f origin HEAD^:master
+That should "undo" the push.
+
+git rm --cached : removes files from staging area without affecting working directory
