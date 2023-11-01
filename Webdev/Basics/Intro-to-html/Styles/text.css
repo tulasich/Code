@@ -1,0 +1,29 @@
+p{
+  margin: 0px;
+}
+.Tahoma-text {
+  font-family: Tahoma;
+  font-weight: bold;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.big {
+  font-family: Arial;
+  font-size: 25px;
+  font-weight: bold;
+  width: 350px;
+  margin-bottom: 50px;
+  line-height: 30px;
+}
+
+.sales {
+  color: red;
+  font-size: 15px;
+}
+
+.html {
+  font-size: 35px;
+  font-weight: bold;
+  
+}

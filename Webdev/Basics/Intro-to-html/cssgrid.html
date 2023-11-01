@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS GRID</title>
+  </head>
+
+  <body>
+    <div style="display: grid; grid-template-columns: 100px 100px;">
+      <div style="background-color: lightblue;"         
+      >div 1</div>
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="display: grid; 
+                grid-template-columns: 100px 100px 200px;
+                margin-top: 30px;">
+      <div style="background-color: lightblue;"         
+      >div 1</div>
+      <div style="background-color: lightpink;">div 2</div>
+      <div style="background-color: lightblue;"         
+      >div 3</div>
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="display: grid;
+                margin-top: 30px;
+                grid-template-columns: 100px 1fr;">
+      <div style="background-color: lightblue;"         
+      >div 1</div>
+      <div style="background-color: lightpink;">div 2</div>
+    </div>
+
+    <div style="display: grid;
+                margin-top: 30px;
+                grid-template-columns: 100px 1fr 2fr;">
+      <div style="background-color: lightblue;
+      padding: 30px;"         
+      >div 1</div>
+      <div style="background-color: lightpink;">div 2</div>
+      <div style="background-color: lightblue;
+      padding: 30px;"         
+      >div 3</div>
+    </div>
+
+    <div style="margin-top: 30px;
+                display: grid;
+                grid-template-columns: 200px 75px;">
+      <div style="background-color: lightblue;">200px</div>
+      <div style="background-color: lightpink;">75px</div>
+    </div>
+
+    <div style="margin-top: 30px;
+                display: grid;
+                grid-template-columns: 50px 1fr 75px;">
+      <div style="background-color: lightblue;">50px
+      </div>
+      <div style="background-color: lightpink;">1fr</div>
+      <div style="background-color: lightblue;">75px</div>
+    </div>
+
+    <div style="margin-top: 30px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                row-gap: 10px;
+                column-gap: 20px;">
+      <div style="background-color: lightcoral;">col1
+      </div>
+      <div style="background-color: lightblue;">col2
+      </div>
+      <div style="background-color: lightcoral;">col3
+      </div>
+      <div style="background-color: lightblue;">col4
+      </div>
+      <div style="background-color: lightcoral;">col1
+      </div>
+      <div style="background-color: lightblue;">col2
+      </div>
+      <div style="background-color: lightcoral;">col3
+      </div>
+      <div style="background-color: lightblue;">col4
+      </div>
+  </body>
+</html>

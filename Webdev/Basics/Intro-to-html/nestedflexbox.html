@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>nested flexbox excercises</title>  
+    <link rel="stylesheet" href="Styles/nestedflexboxtweet.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      .overall-box-container {
+        display: inline-block;
+        border-width: 1px;
+        border-color: gray;
+        border-style: solid;
+        box-shadow: 2px 1px 8px rgb(0, 0, 0, 0.3);
+        padding-bottom: 30px;
+        padding-right: 20px;
+        padding-left: 10px;
+        padding-top: 8px;
+        margin: 10px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        padding-top: 15px;
+        }
+
+      .image {
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        border: none;
+        object-fit: cover;
+      }
+
+      .image-block {
+        margin-right: 8px;
+      }
+
+      .title-time {
+        display: flex;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body style="margin-bottom: 500px;">
+    <div style="display: flex;
+                ">
+      <div style="display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  background-color: lightpink;
+                  width: 100px;
+                  height: 55px;"><span style="background-color: black;
+                        color: white;">item1</span></div>
+      <div style="background-color: lightblue;
+                  width: 200px;
+                  height: 55px;"></div>
+    </div>
+
+    <div style="margin-top: 30px;
+                display: flex;
+                ">
+      <div style="width: 100px;
+                  background-color: lightblue;
+                  height: 55px;">
+      </div>
+      <div style="background-color: lightpink;
+                  width: 200px;">
+          <div>row1</div>
+        <div style="display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;">
+          <div style="background-color: black;
+                      color: white;">row2</div>
+          <div style="background-color: black;
+          color: white;">row2</div>
+        </div>
+          
+      </div>
+     
+    </div>
+
+    <div class="overall-box-container" style="margin-top: 50px;">
+      <div style="font-family: Roboto; color: gray; font-size: 14px;">ALL INBOXES</div>
+      <div class="container">
+        <div class="image-block"><img class="image" src="Images/oliverthecat.jpg"></div>
+        <div>
+          <div class="title-time">
+            <div style="font-family: Roboto; margin-bottom: 7px; font-size: 16px;"><b>Chewy Promotions</b></div>
+            <div style="font-family: Roboto; color: gray; font-size: 14px;">4:58 PM</div>
+          </div>
+          <div style="font-family: Roboto; margin-bottom: 5px; font-size: 14px;"><b>Biggest sales of the year!</b></div>
+          <div style="font-family: Roboto; color: gray;font-size: 14px;">Hey there! We're writing to tell you about our...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 13 e and 13 d-->
+
+    <div class="overall-box-container" style="margin-top: 50px;">
+      <div style="font-family: Roboto; color: gray; font-size: 14px;">ALL INBOXES</div>
+      <div class="container">
+        <div class="image-block"><img class="image" src="Images/oliverthecat.jpg"></div>
+        <div>
+          <div class="title-time">
+            <div style="font-family: Roboto; margin-bottom: 7px; font-size: 16px;"><b>Chewy Promotions</b></div>
+            <div style="font-family: Roboto; color: gray; font-size: 14px;">4:58 PM</div>
+          </div>
+          <div style="font-family: Roboto; margin-bottom: 5px; font-size: 14px;"><b>Biggest sales of the year!</b></div>
+          <div style="font-family: Roboto; color: gray;font-size: 14px;">Hey there! We're writing to tell you about our...</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="image-block"><img class="image" src="Images/rexhappybulldog.jpg"></div>
+        <div>
+          <div class="title-time">
+            <div style="font-family: Roboto; margin-bottom: 7px; font-size: 16px;"><b>Best Buy</b></div>
+            <div style="font-family: Roboto; color: gray; font-size: 14px;">12:32 PM</div>
+          </div>
+          <div style="font-family: Roboto; margin-bottom: 5px; font-size: 14px;"><b>Your Best Buy eReceipt</b></div>
+          <div style="font-family: Roboto; color: gray;font-size: 14px;">Thank you for shopping at Best Buy, here is...</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="image-block"><img class="image" src="Images/mimisleepycat.jpg"></div>
+        <div>
+          <div class="title-time">
+            <div style="font-family: Roboto; margin-bottom: 7px; font-size: 16px;"><b>Netflix</b></div>
+            <div style="font-family: Roboto; color: gray; font-size: 14px;">9:00 AM</div>
+          </div>
+          <div style="font-family: Roboto; margin-bottom: 5px; font-size: 14px;"><b>Here's what's coming soon to Netflix</b></div>
+          <div style="font-family: Roboto; color: gray;font-size: 14px;">Brand new movies and shows, old favorites...</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
